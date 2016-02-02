@@ -131,6 +131,10 @@ static const CRPCConvertParam vRPCConvertParams[] =
     { "getblocktemplate", 0 },
     { "listsinceblock", 1 },
 
+    
+    { "setgenerate", 0 },
+	{ "setgenerate", 1 },
+
     { "scanforalltxns", 0 },
     { "scanforstealthtxns", 0 },
 
