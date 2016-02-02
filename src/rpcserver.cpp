@@ -321,7 +321,12 @@ static const CRPCCommand vRPCCommands[] =
     { "repairwallet",           &repairwallet,           false,     true,      false },
     { "resendtx",               &resendtx,               false,     true,      false },
     { "makekeypair",            &makekeypair,            false,     true,      false },
-    
+    #ifdef ENABLE_WALLET
+    /* Coin generation */
+    { "getgenerate",            &getgenerate,            true,      false,      false },
+    { "gethashespersec",        &gethashespersec,        true,      false,      false },
+    { "setgenerate",            &setgenerate,            true,      true,       false },
+    #endif  
     { "sendalert",              &sendalert,              false,     false,     false },
     { "getnetworkinfo",         &getnetworkinfo,         false,     false,     false },
     
