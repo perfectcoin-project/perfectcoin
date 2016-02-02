@@ -319,6 +319,15 @@ elif cmd == "walletpassphrasechange":
 		print
 		print "\n---An error occurred---\n"
 		print
-
+elif cmd == "setgenerate":
+	try:
+		gen= raw_input("Generate? (true/false): ")
+		cpus = raw_input("Max processors/cores (-1 for unlimited, optional):")
+		try:
+			print access.setgenerate(gen, cpus)
+		except:
+			print access.setgenerate(gen)
+	except:
+		print "\n---An error occurred---\n"
 else:
 	print "Command not found or not supported"
