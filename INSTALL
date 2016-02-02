@@ -1,0 +1,9 @@
+Building PerfectCoin
+
+See doc/readme-qt.rst for instructions on building PerfectCoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of PerfectCoin.
+
+See doc/build-*.txt for instructions on building perfectcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of PerfectCoin.
